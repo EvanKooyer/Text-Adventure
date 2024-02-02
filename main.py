@@ -23,3 +23,19 @@ class Person:
 
     def search_area(self):
         pass
+
+class Room:
+    def init(self, furniture = None, items = None, connected_doors = None):
+        if furniture is None:
+            furniture = []
+        
+        if items is None:
+            items = []
+        
+        if connected_doors is None:
+            connected_doors = {}
+
+        self.furniture = furniture
+        self.items = items
+        self.connected_doors = connected_doors
+
